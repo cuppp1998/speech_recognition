@@ -1100,7 +1100,7 @@ class Recognizer(AudioSource):
             "-logfn", os.devnull
         )  # disable logging (logging causes unwanted output in terminal)
         config.set_boolean("-remove_silence", False)
-        config.set_boolean("-remove_noise", False)
+        # config.set_boolean("-remove_noise", False)
         decoder = pocketsphinx.Decoder(config)
 
         # obtain audio data
